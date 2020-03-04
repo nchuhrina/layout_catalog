@@ -39,7 +39,8 @@ header {
   font-size: 12px;
   line-height: 60px;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 .nav__link:hover {
   color: #00acdc; }
