@@ -16,6 +16,9 @@ header {
   header .logo {
     padding: 10px 0;
     line-height: 0; }
+  header .logo:hover {
+    -webkit-animation: rotatelogo 3s both 1 linear;
+            animation: rotatelogo 3s both 1 linear; }
 
 .nav__list {
   display: -webkit-box;
@@ -40,7 +43,9 @@ header {
   line-height: 60px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
 
 .nav__link:hover {
   color: #00acdc; }
@@ -56,6 +61,22 @@ header {
     bottom: 0;
     height: 4px;
     background-color: #00acdc;
-    border-radius: 8px; }
+    border-radius: 2px; }
+
+@-webkit-keyframes rotatelogo {
+  from {
+    -webkit-transform: rotate3d(10, 10, 10, 10deg);
+            transform: rotate3d(10, 10, 10, 10deg); }
+  to {
+    -webkit-transform: rotate3d(360, 360, 360, 360deg);
+            transform: rotate3d(360, 360, 360, 360deg); } }
+
+@keyframes rotatelogo {
+  from {
+    -webkit-transform: rotate3d(10, 10, 10, 10deg);
+            transform: rotate3d(10, 10, 10, 10deg); }
+  to {
+    -webkit-transform: rotate3d(360, 360, 360, 360deg);
+            transform: rotate3d(360, 360, 360, 360deg); } }
 
 /*# sourceMappingURL=header.css.map */
