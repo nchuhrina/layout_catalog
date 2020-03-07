@@ -7,12 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<style>
-  .product_card--photo { /*critical css*/
-    height: 134px;
-    width: 160px;
-  }
-</style>
 <body>
 <header class="header">
   <div class="logo">
@@ -58,13 +52,35 @@
         <p class="product_card--id">Код товара: 195434</p>
         <div class="product_card--rating">
           <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
+        </div>
+        <div class="product_card--price">
+          <span>Цена:</span>
+          <span>69 999 грн</span>
+        </div>
+        <a class="button_buy" data-qa="card-hover" href="/add">Купить</a>
+      </div>
+    </article>
+    <article class="product_card">
+      <img class="product_card--photo" src="./images/imac.jpeg" alt="iMac 27">
+      <div class="product_card--content">
+        <p class="product_card--title">Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)</p>
+        <p class="product_card--id">Код товара: 195434</p>
+        <div class="product_card--rating">
+          <div class="stars stars--4">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
@@ -80,13 +96,13 @@
         <p class="product_card--id">Код товара: 195434</p>
         <div class="product_card--rating">
           <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
@@ -108,7 +124,7 @@
             <div class="star"></div>
             <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
@@ -124,13 +140,13 @@
         <p class="product_card--id">Код товара: 195434</p>
         <div class="product_card--rating">
           <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
@@ -146,13 +162,13 @@
         <p class="product_card--id">Код товара: 195434</p>
         <div class="product_card--rating">
           <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
@@ -168,13 +184,13 @@
         <p class="product_card--id">Код товара: 195434</p>
         <div class="product_card--rating">
           <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
@@ -190,35 +206,13 @@
         <p class="product_card--id">Код товара: 195434</p>
         <div class="product_card--rating">
           <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
           </div>
-          <span class="product_card--review"> Отзывов: 5</span>
-        </div>
-        <div class="product_card--price">
-          <span>Цена:</span>
-          <span>69 999 грн</span>
-        </div>
-        <a class="button_buy" data-qa="hover" href="/add">Купить</a>
-      </div>
-    </article>
-    <article class="product_card">
-      <img class="product_card--photo" src="./images/imac.jpeg" alt="iMac 27">
-      <div class="product_card--content ">
-        <p class="product_card--title">Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)</p>
-        <p class="product_card--id">Код товара: 195434</p>
-        <div class="product_card--rating">
-          <div class="stars stars--4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <span class="product_card--review"> Отзывов: 5</span>
+          <a href="#" class="product_card--review"> Отзывов: 5</a>
         </div>
         <div class="product_card--price">
           <span>Цена:</span>
