@@ -1,3 +1,6 @@
+@import "var";
+@import "mixins";
+
 header {
   @include flexSpaseBtwn;
   box-sizing: border-box;
@@ -10,6 +13,10 @@ header {
   .logo {
     padding: 10px 0;
     line-height: 0;
+  }
+
+  .logo:hover {
+    animation: rotatelogo 3s both 1 linear;
   }
 }
 
@@ -38,6 +45,7 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
+    transition: color 0.5s;
   }
 
   &__link:hover {
@@ -47,6 +55,7 @@ header {
 
 .is-active {
   color: $colorBlue;
+
   &:after {
     content: "";
     position: absolute;
@@ -57,5 +66,14 @@ header {
     height: 4px;
     background-color: $colorBlue;
     border-radius: 2px;
+  }
+}
+
+@keyframes rotatelogo {
+  from {
+    transform: rotate3d(10,10,10,10deg);
+  }
+  to {
+    transform: rotate3d(360,360,360,360deg);
   }
 }
