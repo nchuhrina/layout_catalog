@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 31% 69%;
+  grid-template-rows: 1fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -14,7 +14,15 @@ header {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  @media screen and (max-width: 1024px) {
+    header {
+      grid-template-columns: 18% 82%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   header .logo {
+    display: grid;
+    justify-self: start;
     padding: 10px 0;
     line-height: 0; }
   header .logo:hover {
@@ -25,6 +33,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0; }
 
@@ -205,14 +216,13 @@ html {
   font-family: "Roboto", sans-serif; }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-auto-columns: 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 40px;
