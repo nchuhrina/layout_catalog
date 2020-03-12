@@ -2,7 +2,10 @@
 @import "mixins";
 
 header {
-  @include flexSpaseBtwn;
+  display: grid;
+  grid-template-columns: 31% 69%;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
   box-sizing: border-box;
   height: 60px;
   margin-bottom: $marginBottomCard;
@@ -10,7 +13,14 @@ header {
   background-color: $colorWhite;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 18% 82%;
+    justify-content: space-between;
+  }
+
   .logo {
+    display: grid;
+    justify-self: start;
     padding: 10px 0;
     line-height: 0;
   }
@@ -21,8 +31,10 @@ header {
 }
 
 .nav {
+
   &__list {
     display: flex;
+    justify-content: center;
     @include resets;
   }
 
@@ -71,9 +83,9 @@ header {
 
 @keyframes rotatelogo {
   from {
-    transform: rotate3d(10,10,10,10deg);
+    transform: rotate3d(10, 10, 10, 10deg);
   }
   to {
-    transform: rotate3d(360,360,360,360deg);
+    transform: rotate3d(360, 360, 360, 360deg);
   }
 }

@@ -14,9 +14,11 @@ html {
 }
 
 .content {
-  display: flex;
+  display: grid;
+  grid-auto-columns: min(200px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
-  flex-wrap: wrap;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 40px;
