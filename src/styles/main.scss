@@ -1,3 +1,26 @@
-body {
-  margin: 0;
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+@import "var";
+@import "mixins";
+@import "header";
+@import "catalog";
+
+body,
+p {
+  @include resets;
+}
+
+html {
+  font-family: $fontRoboto;
+}
+
+.content {
+  display: grid;
+  grid-auto-columns: min(200px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
